@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi tienda en línea</title>
+    <style>
+      /* Estilos para el menú de navegación */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 20px;
+      }
+      /* Estilos para la sección principal */
+      .container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+      .column {
+        flex-basis: 50%;
+      }
+      .column form {
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .column ul {
+        list-style: none;
+        padding: 0;
+      }
+      .column ul li {
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      /* Estilos para el pie de página */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Mi tienda en línea</h1>
+      <div>
+        <a href="#">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Contacto</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="column">
+        <h2>Registro</h2>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre"><br>
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo"><br>
+          <label for="contraseña">Contraseña:</label>
+          <input type="password" id="contraseña" name="contraseña"><br>
+          <input type="submit" value="Registrarse">
+        </form>
+      </div>
+      <div class="column">
+        <h2>Productos</h2>
+        <ul>
+          <li>Producto 1</li>
+          <li>Producto 2</li>
+          <li>Producto 3</li>
+          <li>Producto 4</li>
+          <li>Producto 5</li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <p>Contáctanos:</p>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+    <style>
+      td {
+        text-align: center;
+        width: 20%;
+        border: 2px solid;
+        border-color: rgb(0, 0, 0);
+      }
+      #marcar {
+        background-color: aqua;
+        font-weight: bold;
+      }
+      
+    </style>
+    <script>
+      document.addEventListener('click', function(e) {
+        var color = e.target.childNodes[0].data
+        var divdt = e.target
+        if(divdt.style.backgroundColor != color){
+            divdt.style.backgroundColor = color
+            if(color == 'black')
+            divdt.style.color = 'white'
+        }
+        else
+            divdt.style.backgroundColor = 'white'
+        })
+    </script>
+  </head>
+  <body>
+    <h2>Tablas html</h2>
+    <table>
+      <tr>
+        <td onmouseover="alert('he pasado por encima')">yellow</td>
+        <td>red</td>
+        <td colspan="2">green</td>
+      </tr>
+      <tr>
+        <td style="background-color: r;">violet</td>
+        <td colspan="2">brown</td>
+        <td rowspan="2">rosybrown</td>
+      </tr>
+      <tr>
+        <td rowspan="3">grey</td>
+        <td>blue</td>
+        <td>orange</td>
+      </tr>
+      <tr>
+        <td colspan="3">turquoise</td>
+      </tr>
+      <tr>
+        <td style="color: black" colspan="3">black</td>
+      </tr>
+    </table>
+    <button class="glow-on-hover" type="button" onclick="location.href='TU ENLACE DE DESTINO'">Webempresa Blog</button>
+  </body>
+</html>

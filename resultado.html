@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+</head>
+<body>
+    <h1>Hemos mandado estos datos</h1>
+    <div id="resultados">
+
+    </div>
+
+</body>
+<script>
+    const resutadoDiv = document.getElementById("resultados")
+    new URLSearchParams(window.location.search).forEach((value,name) =>{
+        if (name == 'agree')
+            resutadoDiv.append(document.createElement('input'))
+        resutadoDiv.append(`El valor de ${name} es ${value}`)
+        resutadoDiv.append(document.createElement('br'))
+    })
+</script>
+</html>
