@@ -9,7 +9,9 @@
       function copiar(){
         var inputName = document.getElementById('Nombre')
         var inputCopia = document.getElementById('copia')
-        inputCopia.value = inputName.value
+        var inputEdad = document.getElementById('edad')
+        var area1 = document.getElementById('area')
+        area1.value = inputName.value +" "+inputCopia.value+" "+inputEdad.value
     }
     </script>
 </head>
@@ -19,8 +21,16 @@
         <input id="Nombre" type="text"><br>
     </div>
     <div>
-        <label for="text">texto Copiado</label>
+        <label for="text">Apellidos</label>
         <input id="copia" type="text">
+    </div>
+    <div>
+        <label for="edad">Edad</label>
+        <input id="edad" type="number">
+    </div>
+    <div>
+        <label for="area">Area</label>
+        <textarea name="area" id="area" cols="10" rows="10"></textarea>
     </div>
         <button onclick=copiar()>Copiar</button>
 </body>

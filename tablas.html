@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tablas</title>
     <style>
+      p[name="parrafo1"]{
+        font-size: large;
+      }
       td {
         text-align: center;
         width: 20%;
         border: 2px solid;
         border-color: rgb(0, 0, 0);
       }
+
       #marcar {
         background-color: aqua;
         font-weight: bold;
@@ -27,8 +31,11 @@
             if(color == 'black')
             divdt.style.color = 'white'
         }
-        else
+        else {
+            if(divdt.style.color = 'white')
+              divdt.style.color = 'black'
             divdt.style.backgroundColor = 'white'
+          }
         })
     </script>
   </head>
@@ -36,12 +43,12 @@
     <h2>Tablas html</h2>
     <table>
       <tr>
-        <td onmouseover="alert('he pasado por encima')">yellow</td>
+        <td id="yellow">yellow</td>
         <td>red</td>
         <td colspan="2">green</td>
       </tr>
       <tr>
-        <td style="background-color: r;">violet</td>
+        <td>violet</td>
         <td colspan="2">brown</td>
         <td rowspan="2">rosybrown</td>
       </tr>

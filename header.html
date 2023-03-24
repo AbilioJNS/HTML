@@ -13,6 +13,14 @@
             border: 4px solid rgb(15, 3, 252);
         }
     </style>
+    <script>
+      function funcion(){
+        var lista = document.getElementById("Paises")
+        var pais = document.createElement('li')
+        pais.innerText = "Dinamarca"
+        lista.append(pais)
+      }
+    </script>
 </head>
   <header>
     <title>HEADER</title>
@@ -31,7 +39,7 @@
         <li>JavaScript</li>
     </ol>
     <h4>Paise de habla hispana</h4>
-    <ul class="borderAzul">
+    <ul onclick=funcion() id="Paises" class="borderAzul">
         <li>España </li>
         <li>Chile </li>
         <li>Colombia </li>
